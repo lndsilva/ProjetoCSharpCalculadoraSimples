@@ -84,6 +84,7 @@ namespace ProjetoCalculadora
                         }
                     }
                     lblResposta.Text = resp.ToString();
+                    limparNumeros();
                 }
             }
             catch (Exception)
@@ -107,6 +108,16 @@ namespace ProjetoCalculadora
             txtNum1.Clear();
             txtNum2.Clear();
             lblResposta.Text = "";
+            rdbSomar.Checked = false;
+            rdbSubtrair.Checked = false;
+            rdbMultiplicar.Checked = false;
+            rdbDividir.Checked = false;
+            txtNum1.Focus();
+        }
+        public void limparNumeros()
+        {
+            txtNum1.Clear();
+            txtNum2.Clear();
             rdbSomar.Checked = false;
             rdbSubtrair.Checked = false;
             rdbMultiplicar.Checked = false;

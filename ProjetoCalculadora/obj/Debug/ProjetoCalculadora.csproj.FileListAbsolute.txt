@@ -7,3 +7,4 @@ C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\ProjetoCalculado
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\ProjetoCalculadora\obj\Debug\ProjetoCalculadora.csproj.CoreCompileInputs.cache
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\ProjetoCalculadora\obj\Debug\ProjetoCalculadora.exe
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\ProjetoCalculadora\obj\Debug\ProjetoCalculadora.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\ProjetoCalculadora\obj\Debug\ProjetoCalculadora.csproj.AssemblyReference.cache
