@@ -1,0 +1,10 @@
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\bin\Debug\Calculo-IMC.exe.config
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\bin\Debug\Calculo-IMC.exe
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\bin\Debug\Calculo-IMC.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\obj\Debug\Calculo_IMC.Properties.Resources.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\obj\Debug\Calculo-IMC.csproj.GenerateResource.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\obj\Debug\Calculo-IMC.csproj.CoreCompileInputs.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\obj\Debug\Calculo-IMC.exe
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\obj\Debug\Calculo-IMC.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\obj\Debug\Calculo-IMC.csproj.AssemblyReference.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\Calculo-IMC\obj\Debug\Calculo_IMC.frmCalculaIMC.resources
