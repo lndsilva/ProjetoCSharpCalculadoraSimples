@@ -16,7 +16,7 @@ namespace Calculo_IMC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCalculaIMC());
+            Application.Run(new frmMenu());
         }
     }
 }
