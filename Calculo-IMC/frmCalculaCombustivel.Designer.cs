@@ -95,6 +95,7 @@ namespace Calculo_IMC
             this.txtDistancia.Name = "txtDistancia";
             this.txtDistancia.Size = new System.Drawing.Size(195, 26);
             this.txtDistancia.TabIndex = 1;
+            this.txtDistancia.TextChanged += new System.EventHandler(this.txtDistancia_TextChanged);
             // 
             // lblPreco
             // 

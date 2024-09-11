@@ -32,11 +32,21 @@ namespace Calculo_IMC
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
-        }    
+        }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double consumo, distancia, preco; 
+            double consumo, distancia, preco, quilometro, litro, calcular = 0;
+
+            quilometro = Convert.ToDouble(txtQuilometragem.Text);
+            litro = Convert.ToDouble(txtConsumo.Text);
+
+            calcular = quilometro / litro;
+
+
+
+
+
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -44,6 +54,11 @@ namespace Calculo_IMC
             frmMenu abrir = new frmMenu();
             abrir.Show();
             this.Hide();
+        }
+
+        private void txtDistancia_TextChanged(object sender, EventArgs e)
+        {
+            txtQuilometragem.Text = txtDistancia.Text;
         }
     }
 }

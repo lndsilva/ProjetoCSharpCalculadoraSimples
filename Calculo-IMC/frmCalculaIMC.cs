@@ -111,7 +111,6 @@ namespace Calculo_IMC
         public void limparText()
         {
             txtAltura.Clear();
-            txtIMC.Clear();
             txtPeso.Clear();
             txtAltura.Focus();
         }
