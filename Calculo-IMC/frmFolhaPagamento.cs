@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 
 namespace Calculo_IMC
 {
-    public partial class frmMenu : Form
+    public partial class frmFolhaPagamento : Form
     {
         //Criando variáveis para controle do menu
         const int MF_BYCOMMAND = 0X400;
@@ -22,26 +22,12 @@ namespace Calculo_IMC
         [DllImport("user32")]
         static extern int GetMenuItemCount(IntPtr hWnd);
 
-        public frmMenu()
+        public frmFolhaPagamento()
         {
             InitializeComponent();
         }
 
-        private void btnIMC_Click(object sender, EventArgs e)
-        {
-            frmCalculaIMC abrir = new frmCalculaIMC();
-            abrir.Show();
-            this.Hide();
-        }
-
-        private void btnCombustivel_Click(object sender, EventArgs e)
-        {
-            frmCalculaCombustivel abrir = new frmCalculaCombustivel();
-            abrir.Show();
-            this.Hide();
-        }
-
-        private void frmMenu_Load(object sender, EventArgs e)
+        private void frmFolhaPagamento_Load(object sender, EventArgs e)
         {
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int MenuCount = GetMenuItemCount(hMenu) - 1;
@@ -50,12 +36,7 @@ namespace Calculo_IMC
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            frmFolhaPagamento abrir = new frmFolhaPagamento();
+            frmMenu abrir = new frmMenu();
             abrir.Show();
             this.Hide();
         }

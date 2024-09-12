@@ -87,6 +87,7 @@ namespace Calculo_IMC
             this.txtConsumo.Name = "txtConsumo";
             this.txtConsumo.Size = new System.Drawing.Size(195, 26);
             this.txtConsumo.TabIndex = 2;
+            this.txtConsumo.TextChanged += new System.EventHandler(this.txtConsumo_TextChanged);
             // 
             // txtDistancia
             // 
@@ -141,6 +142,7 @@ namespace Calculo_IMC
             // 
             // txtConsumoLitro
             // 
+            this.txtConsumoLitro.Enabled = false;
             this.txtConsumoLitro.Location = new System.Drawing.Point(565, 78);
             this.txtConsumoLitro.MaxLength = 5;
             this.txtConsumoLitro.Name = "txtConsumoLitro";
@@ -149,6 +151,7 @@ namespace Calculo_IMC
             // 
             // txtQuilometragem
             // 
+            this.txtQuilometragem.Enabled = false;
             this.txtQuilometragem.Location = new System.Drawing.Point(565, 32);
             this.txtQuilometragem.MaxLength = 5;
             this.txtQuilometragem.Name = "txtQuilometragem";
@@ -188,6 +191,7 @@ namespace Calculo_IMC
             // 
             // txtPrecoTotal
             // 
+            this.txtPrecoTotal.Enabled = false;
             this.txtPrecoTotal.Location = new System.Drawing.Point(565, 32);
             this.txtPrecoTotal.MaxLength = 5;
             this.txtPrecoTotal.Name = "txtPrecoTotal";
@@ -241,6 +245,7 @@ namespace Calculo_IMC
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnCalcular
             // 

@@ -36,17 +36,24 @@ namespace Calculo_IMC
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double consumo, distancia, preco, quilometro, litro, calcular = 0;
-
-            quilometro = Convert.ToDouble(txtQuilometragem.Text);
-            litro = Convert.ToDouble(txtConsumo.Text);
-
-            calcular = quilometro / litro;
+            double precoTotal = 0;
+            try
+            {
 
 
+                precoCombustivel = Convert.ToDouble(txtPreco.Text);
 
+                precoTotal = consLComb * precoCombustivel;
 
-
+                txtPrecoTotal.Text = "R$ " + string.Format("{0:n2}", precoTotal);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Favor inseir valores", "Sistema",
+                                   MessageBoxButtons.OK, MessageBoxIcon.Error,
+                                   MessageBoxDefaultButton.Button1);
+                txtDistancia.Focus();
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -59,6 +66,45 @@ namespace Calculo_IMC
         private void txtDistancia_TextChanged(object sender, EventArgs e)
         {
             txtQuilometragem.Text = txtDistancia.Text;
+        }
+        public double consumo, litro, consLComb = 0, precoCombustivel;
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
+        }
+
+        public void limparCampos()
+        {
+            txtConsumo.Clear();
+            txtConsumoLitro.Clear();
+            txtDistancia.Clear();
+            txtPreco.Clear();
+            txtPrecoTotal.Clear();
+            txtQuilometragem.Clear();
+            txtDistancia.Focus();
+        }
+
+        private void txtConsumo_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                consumo = Convert.ToDouble(txtDistancia.Text);
+
+
+                litro = Convert.ToDouble(txtConsumo.Text);
+
+                consLComb = consumo / litro;
+
+                txtConsumoLitro.Text = consLComb.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Favor inseir valores", "Sistema",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+            }
         }
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="frmCalculaIMC.Designer.cs">
       <DependentUpon>frmCalculaIMC.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFolhaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFolhaPagamento.Designer.cs">
+      <DependentUpon>frmFolhaPagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCalculaIMC.resx">
       <DependentUpon>frmCalculaIMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFolhaPagamento.resx">
+      <DependentUpon>frmFolhaPagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
