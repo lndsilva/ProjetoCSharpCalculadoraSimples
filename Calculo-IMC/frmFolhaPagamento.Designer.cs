@@ -30,176 +30,268 @@ namespace Calculo_IMC
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFolhaPagamento));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gpbDadosSalariais = new System.Windows.Forms.GroupBox();
+            this.txtIR = new System.Windows.Forms.TextBox();
+            this.lblIR = new System.Windows.Forms.Label();
+            this.txtINSS = new System.Windows.Forms.TextBox();
+            this.lblINSS = new System.Windows.Forms.Label();
+            this.txtDemSB = new System.Windows.Forms.TextBox();
+            this.lblSB = new System.Windows.Forms.Label();
+            this.rdbClasseC = new System.Windows.Forms.RadioButton();
+            this.rdbClasseB = new System.Windows.Forms.RadioButton();
+            this.rdbClasseA = new System.Windows.Forms.RadioButton();
+            this.txtSalarioBruto = new System.Windows.Forms.TextBox();
+            this.lblSalarioBruto = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.pnlMenu = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.gpbCooperativa = new System.Windows.Forms.GroupBox();
+            this.lblSalarioLiquido = new System.Windows.Forms.Label();
+            this.txtSalarioLiquido = new System.Windows.Forms.TextBox();
+            this.gpbDemostrarivo = new System.Windows.Forms.GroupBox();
+            this.gpbDadosSalariais.SuspendLayout();
+            this.pnlMenu.SuspendLayout();
+            this.gpbCooperativa.SuspendLayout();
+            this.gpbDemostrarivo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gpbDadosSalariais
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(8, 9);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(834, 326);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Dados Salário";
+            this.gpbDadosSalariais.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gpbDadosSalariais.Controls.Add(this.gpbDemostrarivo);
+            this.gpbDadosSalariais.Controls.Add(this.gpbCooperativa);
+            this.gpbDadosSalariais.Controls.Add(this.label2);
+            this.gpbDadosSalariais.Controls.Add(this.txtSalarioBruto);
+            this.gpbDadosSalariais.Controls.Add(this.lblSalarioBruto);
+            this.gpbDadosSalariais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbDadosSalariais.Location = new System.Drawing.Point(40, 27);
+            this.gpbDadosSalariais.Name = "gpbDadosSalariais";
+            this.gpbDadosSalariais.Size = new System.Drawing.Size(766, 398);
+            this.gpbDadosSalariais.TabIndex = 0;
+            this.gpbDadosSalariais.TabStop = false;
+            this.gpbDadosSalariais.Text = "Dados Salariais";
+            // 
+            // txtIR
+            // 
+            this.txtIR.Enabled = false;
+            this.txtIR.Location = new System.Drawing.Point(65, 215);
+            this.txtIR.MaxLength = 10;
+            this.txtIR.Name = "txtIR";
+            this.txtIR.Size = new System.Drawing.Size(136, 26);
+            this.txtIR.TabIndex = 8;
+            // 
+            // lblIR
+            // 
+            this.lblIR.AutoSize = true;
+            this.lblIR.Location = new System.Drawing.Point(65, 187);
+            this.lblIR.Name = "lblIR";
+            this.lblIR.Size = new System.Drawing.Size(26, 20);
+            this.lblIR.TabIndex = 10;
+            this.lblIR.Text = "IR";
+            // 
+            // txtINSS
+            // 
+            this.txtINSS.Enabled = false;
+            this.txtINSS.Location = new System.Drawing.Point(65, 143);
+            this.txtINSS.MaxLength = 10;
+            this.txtINSS.Name = "txtINSS";
+            this.txtINSS.Size = new System.Drawing.Size(136, 26);
+            this.txtINSS.TabIndex = 7;
+            // 
+            // lblINSS
+            // 
+            this.lblINSS.AutoSize = true;
+            this.lblINSS.Location = new System.Drawing.Point(65, 110);
+            this.lblINSS.Name = "lblINSS";
+            this.lblINSS.Size = new System.Drawing.Size(47, 20);
+            this.lblINSS.TabIndex = 8;
+            this.lblINSS.Text = "INSS";
+            // 
+            // txtDemSB
+            // 
+            this.txtDemSB.Enabled = false;
+            this.txtDemSB.Location = new System.Drawing.Point(65, 71);
+            this.txtDemSB.MaxLength = 10;
+            this.txtDemSB.Name = "txtDemSB";
+            this.txtDemSB.Size = new System.Drawing.Size(136, 26);
+            this.txtDemSB.TabIndex = 6;
+            // 
+            // lblSB
+            // 
+            this.lblSB.AutoSize = true;
+            this.lblSB.Location = new System.Drawing.Point(65, 38);
+            this.lblSB.Name = "lblSB";
+            this.lblSB.Size = new System.Drawing.Size(99, 20);
+            this.lblSB.TabIndex = 6;
+            this.lblSB.Text = "Salário bruto";
+            // 
+            // rdbClasseC
+            // 
+            this.rdbClasseC.AutoSize = true;
+            this.rdbClasseC.Location = new System.Drawing.Point(25, 116);
+            this.rdbClasseC.Name = "rdbClasseC";
+            this.rdbClasseC.Size = new System.Drawing.Size(227, 24);
+            this.rdbClasseC.TabIndex = 5;
+            this.rdbClasseC.TabStop = true;
+            this.rdbClasseC.Text = "Classe C - 10% de desconto";
+            this.rdbClasseC.UseVisualStyleBackColor = true;
+            // 
+            // rdbClasseB
+            // 
+            this.rdbClasseB.AutoSize = true;
+            this.rdbClasseB.Location = new System.Drawing.Point(25, 80);
+            this.rdbClasseB.Name = "rdbClasseB";
+            this.rdbClasseB.Size = new System.Drawing.Size(227, 24);
+            this.rdbClasseB.TabIndex = 4;
+            this.rdbClasseB.TabStop = true;
+            this.rdbClasseB.Text = "Classe B - 20% de desconto";
+            this.rdbClasseB.UseVisualStyleBackColor = true;
+            // 
+            // rdbClasseA
+            // 
+            this.rdbClasseA.AutoSize = true;
+            this.rdbClasseA.Location = new System.Drawing.Point(25, 47);
+            this.rdbClasseA.Name = "rdbClasseA";
+            this.rdbClasseA.Size = new System.Drawing.Size(227, 24);
+            this.rdbClasseA.TabIndex = 3;
+            this.rdbClasseA.TabStop = true;
+            this.rdbClasseA.Text = "Classe A - 30% de desconto";
+            this.rdbClasseA.UseVisualStyleBackColor = true;
+            // 
+            // txtSalarioBruto
+            // 
+            this.txtSalarioBruto.Location = new System.Drawing.Point(29, 74);
+            this.txtSalarioBruto.MaxLength = 10;
+            this.txtSalarioBruto.Name = "txtSalarioBruto";
+            this.txtSalarioBruto.Size = new System.Drawing.Size(136, 26);
+            this.txtSalarioBruto.TabIndex = 1;
+            // 
+            // lblSalarioBruto
+            // 
+            this.lblSalarioBruto.AutoSize = true;
+            this.lblSalarioBruto.Location = new System.Drawing.Point(29, 41);
+            this.lblSalarioBruto.Name = "lblSalarioBruto";
+            this.lblSalarioBruto.Size = new System.Drawing.Size(99, 20);
+            this.lblSalarioBruto.TabIndex = 0;
+            this.lblSalarioBruto.Text = "Salário bruto";
             // 
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
-            this.btnVoltar.Location = new System.Drawing.Point(726, 488);
+            this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVoltar.Location = new System.Drawing.Point(553, 9);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(114, 47);
-            this.btnVoltar.TabIndex = 6;
+            this.btnVoltar.Size = new System.Drawing.Size(200, 75);
+            this.btnVoltar.TabIndex = 13;
             this.btnVoltar.Tag = "Sair";
-            this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVoltar.Text = "&Sair";
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // label1
+            // btnCalcular
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Salário bruto";
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Image = ((System.Drawing.Image)(resources.GetObject("btnCalcular.Image")));
+            this.btnCalcular.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCalcular.Location = new System.Drawing.Point(7, 9);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(200, 75);
+            this.btnCalcular.TabIndex = 11;
+            this.btnCalcular.Text = "&Calcular";
+            this.btnCalcular.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // textBox1
+            // btnLimpar
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 75);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 26);
-            this.textBox1.TabIndex = 1;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
+            this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpar.Location = new System.Drawing.Point(306, 9);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(200, 75);
+            this.btnLimpar.TabIndex = 12;
+            this.btnLimpar.Text = "&Limpar";
+            this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            // 
+            // pnlMenu
+            // 
+            this.pnlMenu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnlMenu.Controls.Add(this.btnCalcular);
+            this.pnlMenu.Controls.Add(this.btnVoltar);
+            this.pnlMenu.Controls.Add(this.btnLimpar);
+            this.pnlMenu.Location = new System.Drawing.Point(40, 431);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(766, 94);
+            this.pnlMenu.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(29, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 20);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Cooperativa";
             // 
-            // radioButton1
+            // gpbCooperativa
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(29, 173);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(227, 24);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Classe A - 30% de desconto";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.gpbCooperativa.Controls.Add(this.rdbClasseA);
+            this.gpbCooperativa.Controls.Add(this.rdbClasseB);
+            this.gpbCooperativa.Controls.Add(this.rdbClasseC);
+            this.gpbCooperativa.Location = new System.Drawing.Point(29, 149);
+            this.gpbCooperativa.Name = "gpbCooperativa";
+            this.gpbCooperativa.Size = new System.Drawing.Size(273, 164);
+            this.gpbCooperativa.TabIndex = 2;
+            this.gpbCooperativa.TabStop = false;
+            this.gpbCooperativa.Text = "Cooperativa";
             // 
-            // radioButton2
+            // lblSalarioLiquido
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(29, 206);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(227, 24);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Classe B - 20% de desconto";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.lblSalarioLiquido.AutoSize = true;
+            this.lblSalarioLiquido.Location = new System.Drawing.Point(65, 265);
+            this.lblSalarioLiquido.Name = "lblSalarioLiquido";
+            this.lblSalarioLiquido.Size = new System.Drawing.Size(107, 20);
+            this.lblSalarioLiquido.TabIndex = 13;
+            this.lblSalarioLiquido.Text = "Salário liquido";
             // 
-            // radioButton3
+            // txtSalarioLiquido
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(29, 242);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(227, 24);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Classe C - 10% de desconto";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.txtSalarioLiquido.Enabled = false;
+            this.txtSalarioLiquido.Location = new System.Drawing.Point(65, 293);
+            this.txtSalarioLiquido.MaxLength = 10;
+            this.txtSalarioLiquido.Name = "txtSalarioLiquido";
+            this.txtSalarioLiquido.Size = new System.Drawing.Size(136, 26);
+            this.txtSalarioLiquido.TabIndex = 9;
             // 
-            // textBox2
+            // gpbDemostrarivo
             // 
-            this.textBox2.Location = new System.Drawing.Point(515, 75);
-            this.textBox2.MaxLength = 10;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 26);
-            this.textBox2.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(515, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Salário bruto";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(515, 163);
-            this.textBox3.MaxLength = 10;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 26);
-            this.textBox3.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(515, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Salário bruto";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(515, 256);
-            this.textBox4.MaxLength = 10;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(136, 26);
-            this.textBox4.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(515, 223);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Salário bruto";
+            this.gpbDemostrarivo.Controls.Add(this.lblSB);
+            this.gpbDemostrarivo.Controls.Add(this.lblSalarioLiquido);
+            this.gpbDemostrarivo.Controls.Add(this.txtDemSB);
+            this.gpbDemostrarivo.Controls.Add(this.txtSalarioLiquido);
+            this.gpbDemostrarivo.Controls.Add(this.lblINSS);
+            this.gpbDemostrarivo.Controls.Add(this.lblIR);
+            this.gpbDemostrarivo.Controls.Add(this.txtINSS);
+            this.gpbDemostrarivo.Controls.Add(this.txtIR);
+            this.gpbDemostrarivo.Location = new System.Drawing.Point(470, 42);
+            this.gpbDemostrarivo.Name = "gpbDemostrarivo";
+            this.gpbDemostrarivo.Size = new System.Drawing.Size(270, 335);
+            this.gpbDemostrarivo.TabIndex = 14;
+            this.gpbDemostrarivo.TabStop = false;
+            this.gpbDemostrarivo.Text = "Demonstrativo";
             // 
             // frmFolhaPagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 547);
-            this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.pnlMenu);
+            this.Controls.Add(this.gpbDadosSalariais);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -207,27 +299,39 @@ namespace Calculo_IMC
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Folha de Pagamento";
             this.Load += new System.EventHandler(this.frmFolhaPagamento_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gpbDadosSalariais.ResumeLayout(false);
+            this.gpbDadosSalariais.PerformLayout();
+            this.pnlMenu.ResumeLayout(false);
+            this.gpbCooperativa.ResumeLayout(false);
+            this.gpbCooperativa.PerformLayout();
+            this.gpbDemostrarivo.ResumeLayout(false);
+            this.gpbDemostrarivo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gpbDadosSalariais;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbClasseC;
+        private System.Windows.Forms.RadioButton rdbClasseB;
+        private System.Windows.Forms.RadioButton rdbClasseA;
+        private System.Windows.Forms.TextBox txtSalarioBruto;
+        private System.Windows.Forms.Label lblSalarioBruto;
+        private System.Windows.Forms.TextBox txtIR;
+        private System.Windows.Forms.Label lblIR;
+        private System.Windows.Forms.TextBox txtINSS;
+        private System.Windows.Forms.Label lblINSS;
+        private System.Windows.Forms.TextBox txtDemSB;
+        private System.Windows.Forms.Label lblSB;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Panel pnlMenu;
+        private System.Windows.Forms.GroupBox gpbCooperativa;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblSalarioLiquido;
+        private System.Windows.Forms.TextBox txtSalarioLiquido;
+        private System.Windows.Forms.GroupBox gpbDemostrarivo;
     }
 }

@@ -38,11 +38,13 @@ namespace Calculo_IMC
             this.button2 = new System.Windows.Forms.Button();
             this.btnCombustivel = new System.Windows.Forms.Button();
             this.btnIMC = new System.Windows.Forms.Button();
+            this.btnOutraJanela = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
+            this.pnlMenu.Controls.Add(this.btnOutraJanela);
             this.pnlMenu.Controls.Add(this.btnVoltar);
             this.pnlMenu.Controls.Add(this.button3);
             this.pnlMenu.Controls.Add(this.button4);
@@ -153,6 +155,22 @@ namespace Calculo_IMC
             this.btnIMC.UseVisualStyleBackColor = true;
             this.btnIMC.Click += new System.EventHandler(this.btnIMC_Click);
             // 
+            // btnOutraJanela
+            // 
+            this.btnOutraJanela.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnOutraJanela.FlatAppearance.BorderSize = 0;
+            this.btnOutraJanela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOutraJanela.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOutraJanela.Image = ((System.Drawing.Image)(resources.GetObject("btnOutraJanela.Image")));
+            this.btnOutraJanela.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOutraJanela.Location = new System.Drawing.Point(439, 454);
+            this.btnOutraJanela.Name = "btnOutraJanela";
+            this.btnOutraJanela.Size = new System.Drawing.Size(72, 72);
+            this.btnOutraJanela.TabIndex = 7;
+            this.btnOutraJanela.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOutraJanela.UseVisualStyleBackColor = true;
+            this.btnOutraJanela.Click += new System.EventHandler(this.btnOutraJanela_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,5 +199,6 @@ namespace Calculo_IMC
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCombustivel;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnOutraJanela;
     }
 }

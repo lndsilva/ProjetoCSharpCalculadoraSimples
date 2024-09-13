@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoCalculadora", "ProjetoCalculadora\ProjetoCalculadora.csproj", "{B641E9FC-FF07-4866-951E-418B5CE39B9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculo-IMC", "Calculo-IMC\Calculo-IMC.csproj", "{7B369C03-D0FE-4073-8D08-5FF99257864F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B641E9FC-FF07-4866-951E-418B5CE39B9B} = {B641E9FC-FF07-4866-951E-418B5CE39B9B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

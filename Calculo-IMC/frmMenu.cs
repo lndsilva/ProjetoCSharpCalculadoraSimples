@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
+
 namespace Calculo_IMC
 {
     public partial class frmMenu : Form
@@ -58,6 +59,11 @@ namespace Calculo_IMC
             frmFolhaPagamento abrir = new frmFolhaPagamento();
             abrir.Show();
             this.Hide();
+        }
+
+        private void btnOutraJanela_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
