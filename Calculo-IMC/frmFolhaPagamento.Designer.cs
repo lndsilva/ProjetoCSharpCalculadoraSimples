@@ -187,7 +187,7 @@ namespace Calculo_IMC
             this.btnVoltar.Size = new System.Drawing.Size(200, 75);
             this.btnVoltar.TabIndex = 13;
             this.btnVoltar.Tag = "Sair";
-            this.btnVoltar.Text = "&Sair";
+            this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);

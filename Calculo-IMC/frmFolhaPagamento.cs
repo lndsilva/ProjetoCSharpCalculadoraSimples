@@ -110,6 +110,28 @@ namespace Calculo_IMC
 
             return salarioBruto;
         }
+        public double calculaCooperativa(double salario)
+        {
+
+            if (rdbClasseA.Checked)
+            {
+                salarioBruto = salario - (salario * 30 / 100);
+
+            }
+            if (rdbClasseB.Checked)
+            {
+                salarioBruto = salario - (salario * 20 / 100);
+
+            }
+            if (rdbClasseC.Checked)
+            {
+                salarioBruto = salario - (salario * 10 / 100);
+
+            }
+
+
+            return salarioBruto;
+        }
         public double calculaIR(double salario)
         {
             if (salario <= 2112)
