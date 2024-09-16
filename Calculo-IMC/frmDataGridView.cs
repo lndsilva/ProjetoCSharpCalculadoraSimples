@@ -17,7 +17,7 @@ namespace Calculo_IMC
         {
             InitializeComponent();
 
-            dtvDados.DataSource = carregaDataGrid();
+            //dtvDados.DataSource = carregaDataGrid();
             
         }
 
@@ -39,5 +39,6 @@ namespace Calculo_IMC
 
             return dt;
         }
+
     }
 }
